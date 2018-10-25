@@ -1,0 +1,34 @@
+.wp-block-mdlr-featured-image button.is-button.is-default {
+	display: none;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	width: 44px;
+
+	overflow: hidden;
+	text-decoration: none;
+	text-indent: -500px;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive:after {
+	display: block;
+	height: 44px;
+	width: 44px;
+
+	background-color: #ffffff;
+	color: #555d66;
+	content: "\f335";
+	font-family: dashicons;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0;
+}
+
+.wp-block-mdlr-featured-image button.is-destructive:hover:after {
+	background-color: #eeeeee;
+}
