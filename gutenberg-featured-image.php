@@ -29,7 +29,7 @@ function mdlr_gutenberg_block_featured_image_backend_enqueue() {
 	wp_enqueue_script(
 		'mdlr-gutenberg-block-featured-image-backend-script', // Unique handle.
 		plugins_url( 'js/block.build.js', __FILE__ ), // block.js: We register the block here.
-		array( 'wp-blocks', 'wp-i18n', 'wp-element' ) // Dependencies, defined above.
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ) // Dependencies, defined above.
 	);
 
 	wp_enqueue_style(
