@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * wp-i18n:    The __() function for internationalization.
  *
  * CSS dependencies:
- * wp-blocks: The WordPress core block styles.
+ * wp-editor: The WordPress core block styles.
  *
  * @since 1.0.0
  */
@@ -35,7 +35,7 @@ function mdlr_gutenberg_block_featured_image_backend_enqueue() {
 	wp_enqueue_style(
 		'mdlr-gutenberg-block-featured-image-style-editor', // Unique handle.
 		plugins_url( 'css/editor.css', __FILE__ ), // editor.css: This file styles the block in the editor.
-		array( 'wp-blocks' ), // Dependencies, defined above.
+		array( 'wp-editor' ), // Dependencies, defined above.
 		filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' ) // Version: filemtime - Gets file modification time.
 	);
 }
